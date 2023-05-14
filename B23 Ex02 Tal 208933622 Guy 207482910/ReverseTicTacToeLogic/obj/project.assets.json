@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/talmishanbarak/.nuget/packages/": {}
+    "C:\\Users\\guywe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj",
+      "projectUniqueName": "C:\\Users\\guywe\\source\\repos\\B23 Ex02 GuyWeitzman 207482910 TalMishanBarak 208933622\\EX2\\mta_cs\\B23 Ex02 Tal 208933622 Guy 207482910\\ReverseTicTacToeLogic\\ReverseTicTacToeLogic.csproj",
       "projectName": "ReverseTicTacToeLogic",
-      "projectPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj",
-      "packagesPath": "/Users/talmishanbarak/.nuget/packages/",
-      "outputPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/obj/",
+      "projectPath": "C:\\Users\\guywe\\source\\repos\\B23 Ex02 GuyWeitzman 207482910 TalMishanBarak 208933622\\EX2\\mta_cs\\B23 Ex02 Tal 208933622 Guy 207482910\\ReverseTicTacToeLogic\\ReverseTicTacToeLogic.csproj",
+      "packagesPath": "C:\\Users\\guywe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guywe\\source\\repos\\B23 Ex02 GuyWeitzman 207482910 TalMishanBarak 208933622\\EX2\\mta_cs\\B23 Ex02 Tal 208933622 Guy 207482910\\ReverseTicTacToeLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/talmishanbarak/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\guywe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -62,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
