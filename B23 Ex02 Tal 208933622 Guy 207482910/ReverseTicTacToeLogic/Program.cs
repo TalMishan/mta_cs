@@ -1,7 +1,10 @@
-﻿var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
-
+﻿namespace ReverseTicTacToeLogic
+{
+    class Program
+    {
+        public static void Main()
+        {
+            System.Console.WriteLine("Hi");
+        }
+    }
+}
