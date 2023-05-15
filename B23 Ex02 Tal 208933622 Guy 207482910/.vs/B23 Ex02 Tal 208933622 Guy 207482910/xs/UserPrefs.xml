@@ -1,4 +1,26 @@
 ﻿<Properties StartupConfiguration="{A957B793-6652-435E-AEF2-D050D858D1AB}|http">
+  <MonoDevelop.Ide.ItemProperties.ReverseTicTacToeLogic PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ReverseTicTacToeLogic FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReverseTicTacToeLogic/Program.cs">
+    <Files>
+      <File FileName="ReverseTicTacToeLogic/Program.cs" Line="7" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="B23 Ex02 Tal 208933622 Guy 207482910" expanded="True">
+            <Node name="ReverseTicTacToeLogic" expanded="True">
+              <Node name="GameBoard.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ReverseTicTacToeUI FirstBuild="True" />
 </Properties>

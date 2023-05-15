@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj": {}
+    "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeUI/ReverseTicTacToeUI.csproj": {}
   },
   "projects": {
-    "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj": {
+    "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeUI/ReverseTicTacToeUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj",
-        "projectName": "ReverseTicTacToeLogic",
-        "projectPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/ReverseTicTacToeLogic.csproj",
+        "projectUniqueName": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeUI/ReverseTicTacToeUI.csproj",
+        "projectName": "ReverseTicTacToeUI",
+        "projectPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeUI/ReverseTicTacToeUI.csproj",
         "packagesPath": "/Users/talmishanbarak/.nuget/packages/",
-        "outputPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeLogic/obj/",
+        "outputPath": "/Users/talmishanbarak/Documents/Personal/College/projects/C#/ex2/mta_cs/B23 Ex02 Tal 208933622 Guy 207482910/ReverseTicTacToeUI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/talmishanbarak/.nuget/NuGet/NuGet.Config"
@@ -49,9 +49,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
