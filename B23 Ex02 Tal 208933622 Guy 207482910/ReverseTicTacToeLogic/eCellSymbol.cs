@@ -1,9 +1,9 @@
 namespace ReverseTicTacToeLogic
 {
-    public enum eCellSign
+    public enum eCellSymbol
     {
         X,
         O,
-        Blank,
+        Empty,
     }
 }

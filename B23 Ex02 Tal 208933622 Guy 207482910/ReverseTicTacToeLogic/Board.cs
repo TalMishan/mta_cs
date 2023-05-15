@@ -7,26 +7,28 @@ using System.Threading.Tasks;
 
 namespace ReverseTicTacToeLogic
 {
-    public class GameBoard
+    public class Board
     {
         private readonly int r_Size;
-        private readonly eCellSign[,] r_Board;
+        private readonly eCellSymbol[,] r_Board;
         private List<int> m_EmptyCells;
 
-        public GameBoard(int i_BoardLen)
+        public Board(int i_BoardSize)
         {
-            r_Board = new eCellSign[i_BoardLen, i_BoardLen];
-            r_Size = i_BoardLen;
+            r_Board = new eCellSymbol[i_BoardSize, i_BoardSize];
+            r_Size = i_BoardSize;
         }
+
         public int Size
         {
             get { return r_Size; }
         }
 
-        public eCellSign[,] Board
+        public eCellSymbol[,] GameBoard
         {
             get { return r_Board; }
         }
+
         public List<int> EmptyCells
         {
             get { return m_EmptyCells; }
@@ -37,11 +39,12 @@ namespace ReverseTicTacToeLogic
             {
                 for (int j = 0; j < r_Size; j++)
                 {
-                    r_Board[i, j] = eCellSign.Blank;
+                    r_Board[i, j] = eCellSymbol.Empty;
                 }
             }
             initEmptyCells();
         }
+
         private void initEmptyCells()
         {
             m_EmptyCells = new List<int>();
@@ -50,52 +53,39 @@ namespace ReverseTicTacToeLogic
                 m_EmptyCells.Add(i);
             }
         }
-        public void InsertSignToBoardCell(eCellSign i_Sign, int i_Row, int i_Col)
+
+        public void InsertSymbolToBoardCell(eCellSymbol i_Symbol, int i_Row, int i_Col)
         {
-            r_Board[i_Row, i_Col] = i_Sign;
+            r_Board[i_Row, i_Col] = i_Symbol;
             m_EmptyCells.Remove(i_Row * r_Size + i_Col);
         }
+
         public bool IsValidRowOrCol(int i_UserSelection)
         {
             return (i_UserSelection > 0 && i_UserSelection <= r_Size);
         }
+
         public bool IsBoardFullyOccupied()
         {
             return m_EmptyCells.Count == 0;
-        } 
+        }
+
         public bool IsEmptyCell(int i_Row, int i_Col)
         {
-            return r_Board[i_Row, i_Col] == eCellSign.Blank;
+            return r_Board[i_Row, i_Col] == eCellSymbol.Empty;
         }
-        private bool IsAnyRowFullOfSameSign(eCellSign i_Sign)
+
+        private bool IsAnyRowFullOfSameSymbol(eCellSymbol i_Symbol)
         {
             for (int i = 0; i < r_Size; i++)
             {
-                for(int j = 0; j < r_Size; j++)
+                for (int j = 0; j < r_Size; j++)
                 {
-                    if (r_Board[i,j] == i_Sign && j == r_Size - 1)
-                    {
-                       return true;
-                    }
-                    else if(r_Board[i, j] != i_Sign)
-                    {
-                        break;
-                    }
-                }
-            }
-            return false;
-        }
-        private bool IsAnyColFullOfSameSign(eCellSign i_Sign)
-        {
-            for (int j = 0; j < r_Size; j++)
-                {
-                for (int i = 0; i < r_Size; i++)
-                {
-                    if (r_Board[i, j] == i_Sign && i == r_Size - 1)
+                    if (r_Board[i, j] == i_Symbol && j == r_Size - 1)
                     {
                         return true;
                     }
-                    else if (r_Board[i, j] != i_Sign)
+                    else if (r_Board[i, j] != i_Symbol)
                     {
                         break;
                     }
@@ -103,14 +93,34 @@ namespace ReverseTicTacToeLogic
             }
             return false;
         }
-        private bool IsAnyDiagonalFullOfSameSign(eCellSign i_Sign)
+
+        private bool IsAnyColFullOfSameSymbol(eCellSymbol i_Symbol)
+        {
+            for (int j = 0; j < r_Size; j++)
+            {
+                for (int i = 0; i < r_Size; i++)
+                {
+                    if (r_Board[i, j] == i_Symbol && i == r_Size - 1)
+                    {
+                        return true;
+                    }
+                    else if (r_Board[i, j] != i_Symbol)
+                    {
+                        break;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private bool IsAnyDiagonalFullOfSameSymbol(eCellSymbol i_Symbol)
         {
             bool firstDiagonal = true;
             bool secondDiagonal = true;
 
             for (int i = 0; i < r_Size; i++)
             {
-                if(r_Board[i, i] != i_Sign)
+                if (r_Board[i, i] != i_Symbol)
                 {
                     firstDiagonal = false;
                     break;
@@ -120,7 +130,7 @@ namespace ReverseTicTacToeLogic
             int j = r_Size - 1;
             for (int i = 0; i < r_Size; i++)
             {
-                if (r_Board[i, j] != i_Sign)
+                if (r_Board[i, j] != i_Symbol)
                 {
                     firstDiagonal = false;
                     break;
@@ -130,9 +140,10 @@ namespace ReverseTicTacToeLogic
 
             return firstDiagonal || secondDiagonal;
         }
-        public bool IsPlayerLoseTheGame(eCellSign i_Sign)
+
+        public bool IsPlayerLoseTheGame(eCellSymbol i_Symbol)
         {
-            return (IsAnyRowFullOfSameSign(i_Sign) || IsAnyColFullOfSameSign(i_Sign) || IsAnyDiagonalFullOfSameSign(i_Sign));
+            return (IsAnyRowFullOfSameSymbol(i_Symbol) || IsAnyColFullOfSameSymbol(i_Symbol) || IsAnyDiagonalFullOfSameSymbol(i_Symbol));
         }
     }
 }
